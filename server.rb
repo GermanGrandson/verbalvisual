@@ -1,7 +1,7 @@
 require "sinatra"
 
 get "/" do
-  filer = File.join('public','germans.html')
+  filer = File.join('public','verbal.html')
   File.read(filer)
 
 end
