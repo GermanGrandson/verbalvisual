@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Verbal + Visual</title>
+<link href='css/verbal.css' rel='stylesheet' type=text/css>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<div clas='container-fluid'>
+  <div class='row'>
+    <div class='back1'>
+      <div class='saying'>
+      <div class='col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7 col-xs-5 col-xs-offset-7'>
+<span class='begin1'></span><br>
+<span class='begin2'></span><br>
+<span class='begin3'></span><br>
+<p class='small'>ABC Creations offers <b>international end-to-end apparell</b></p>
+<p class='small'>manufacturing solutions for forward-thinking clothing brands.</p><br>
+<button class='button hvr-buzz-out'>OUR PROCESS</button>
+<button class='button hvr-wobble-top'>OUR PRODUCTS</button>
+        </div>
+      </div>
+      <div class='col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-7 col-xs-offset-5'>
+      <p><span class='glyphicon glyphicon-resize-vertical hvr-sink' id='arrow'></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav id = 'nav_bar'>
+  <div class="container">
+    <div class='col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-7 col-xs-offset-5'>
+    <p class='abc'>ABC CREATIONS</p>
+  </div>
+  </div>
+</nav>
+
+<div class = 'containter-fluid'>
+  <div class='row'>
+    <div class='col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4'>
+      <p class='second'>Second Section Header</p><br>
+    </div>
+    <div class = 'back2'>
+      <div class = 'col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-4'>
+    <div class='img'></div>
+    </div>
+  </div>
+  </div><br>
+     <div class='foot'>
+       <div class='col-md-7 col-md-offset-5 col-sm-6 col-sm-offset-4 col-xs-7 col-xs-offset-5'>
+        <p><b>FOOTER TITLE</b></p>
+          <ul>
+            <li>Footer link 1</li>
+            <li>Footer link 2</li>
+            <li>Footer link 3</li>
+            <li>Footer link 4</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+
+  $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 725) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 726) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+</script>
+
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 725) {
+            $('#arrow').fadeIn();
+        } else {
+            $('.#arrow').fadeOut();
+        }
+    });
+
+    $('#arrow').click(function () {
+        $("html, body").animate({
+            scrollTop: 735
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+<script src="javascript/typed.js"></script>
+<script>
+  $(function typed(){
+    setTimeout(function(){
+      $(".begin1").typed({
+
+          strings: ['FROM <b>FACTORY</b>' ],
+          typespeed: 0
+        });
+    },2000);
+  });
+</script>
+
+<script>
+  $(function typed(){
+    setTimeout(function(){
+      $(".begin2").typed({
+
+          strings: ['TO <b>STORE</b>' ],
+          typespeed: 0
+        });
+    },4000);
+  });
+</script>
+
+<script>
+  $(function typed(){
+    setTimeout(function(){
+      $(".begin3").typed({
+
+          strings: ['TO <b>OUT THE DOOR</b>' ],
+          typespeed: 0
+        });
+    },6000);
+  });
+</script>
 
 </body>
 </html>
