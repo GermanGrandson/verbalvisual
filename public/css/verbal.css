@@ -92,9 +92,33 @@ li{
   font-size: 13px
 }
 
-.a{
-  font-weight: bold;
-}
+/*.foot a:link{
+  text-decoration: black;
+}*/
+
+.foot a {
+  color: black;
+  text-decoration: none;
+ }
+
+ .foot a:link {
+     text-decoration: none;
+ }
+
+ .foot a:visited {
+     text-decoration: none;
+ }
+
+ .foot a:hover {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .foot a:active {
+     text-decoration: none;
+ }
+
+
 
 .saying{
   padding-top: 160px;
@@ -104,7 +128,7 @@ li{
 .second{
   font-family: 'Karla', sans-serif;
   font-size: 30px;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .img{
@@ -166,4 +190,6 @@ li{
     color:white;
     font-size: 4em;
     margin-top: 100px;
+    /*background-color: #82a43a; */
+    /*background-color: white;*/
 }
