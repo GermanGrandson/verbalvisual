@@ -118,7 +118,45 @@ li{
      text-decoration: none;
  }
 
+#line2{
+  width: 39px;
+  height: 6px;
+  background-color: gray;
+  border: 2px solid;
+  border-color: gray;
+  border-radius: 25px;
+  margin-top: 4px;
+}
 
+#line3{
+  width: 39px;
+  height: 6px;
+  background-color: gray;
+  border: 2px solid;
+  border-color: gray;
+  border-radius: 25px;
+}
+
+#line4{
+  width: 39px;
+  height: 6px;
+  background-color: gray;
+  border: 2px solid;
+  border-color: gray;
+  border-radius: 25px;
+}
+
+#line1{
+  margin-top: 16px;
+}
+
+#line{
+  width: 35px;
+ height: 5px;
+ background-color: black;
+ margin: 6px 0;
+ border-radius: 45px;
+}
 
 .saying{
   padding-top: 160px;
