@@ -12,37 +12,43 @@
 <body>
 
 
-<div clas='container-fluid'>
+<div class='container-fluid'>
   <div class='row'>
     <div class='back1'>
       <div class='saying'>
-      <div class='col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7 col-xs-5 col-xs-offset-7'>
-<span class='begin1'></span><br>
-<span class='begin2'></span><br>
-<span class='begin3'></span><br>
-<p class='small'>ABC Creations offers <b>international end-to-end apparell</b></p>
-<p class='small'>manufacturing solutions for forward-thinking clothing brands.</p><br>
-<button class='button hvr-buzz-out'>OUR PROCESS</button>
-<button class='button hvr-wobble-top'>OUR PRODUCTS</button>
+        <div class='col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7 col-xs-5 col-xs-offset-7'>
+          <!-- <div class='factory'> -->
+          <span class='begin1'></span><br>
+          <span class='begin2'></span><br>
+          <span class='begin3'></span><br>
+          <p class='small'>ABC Creations offers <b>international end-to-end apparell</b></p>
+          <p class='small'>manufacturing solutions for forward-thinking clothing brands.</p><br>
+          <button class='button hvr-buzz-out'>OUR PROCESS</button>
+          <button class='button hvr-wobble-top'>OUR PRODUCTS</button>
+        <!-- </div> -->
         </div>
       </div>
-      <div class='col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-7 col-xs-offset-5'>
-      <p><span class='glyphicon glyphicon-resize-vertical hvr-sink' id='arrow'></span></p>
+          <div class='col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-7 col-xs-offset-5'>
+          <p><span class='glyphicon glyphicon-resize-vertical hvr-sink' id='arrow'></span></p>
       </div>
     </div>
   </div>
 </div>
 
-<nav id = 'nav_bar'>
-  <div class="container">
-    <div class='col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-7 col-xs-offset-5'>
-    <p class='abc'>ABC CREATIONS</p>
+<div class="container-fluid">
+  <div class='row'>
+    <div class='nav'>
+      <nav id = 'nav_bar'>
+        <div class='col-md-10 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-7 col-xs-offset-5'>
+          <p class='abc'>ABC CREATIONS</p>
+        </div>
+      </nav>
+    </div>
   </div>
-  </div>
-</nav>
+</div>
 
 <div class = 'containter-fluid'>
-  <div class='row'>
+  <!-- <div class='row'> -->
     <div class='col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4'>
       <p class='second'>Second Section Header</p><br>
     </div>
@@ -51,7 +57,7 @@
     <div class='img'></div>
     </div>
   </div>
-  </div><br>
+    <br>
      <div class='foot'>
        <div class='col-md-7 col-md-offset-5 col-sm-6 col-sm-offset-4 col-xs-7 col-xs-offset-5'>
         <p><b>FOOTER TITLE</b></p>
@@ -64,6 +70,7 @@
         </div>
       </div>
   </div>
+<!-- </div> -->
 </div>
 
 
@@ -72,10 +79,10 @@ $(document).ready(function() {
 
   $(window).scroll(function () {
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 725) {
+    if ($(window).scrollTop() > 644) {
       $('#nav_bar').addClass('navbar-fixed');
     }
-    if ($(window).scrollTop() < 726) {
+    if ($(window).scrollTop() < 645) {
       $('#nav_bar').removeClass('navbar-fixed');
     }
   });
@@ -86,7 +93,7 @@ $(document).ready(function() {
 $(document).ready(function () {
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() < 725) {
+        if ($(this).scrollTop() < 644) {
             $('#arrow').fadeIn();
         } else {
             $('.#arrow').fadeOut();
@@ -95,8 +102,8 @@ $(document).ready(function () {
 
     $('#arrow').click(function () {
         $("html, body").animate({
-            scrollTop: 735
-        }, 600);
+            scrollTop: 644
+        }, 1000);
         return false;
     });
 
@@ -124,7 +131,7 @@ $(document).ready(function () {
           strings: ['TO <b>STORE</b>' ],
           typespeed: 0
         });
-    },4000);
+    },3000);
   });
 </script>
 
@@ -136,7 +143,7 @@ $(document).ready(function () {
           strings: ['TO <b>OUT THE DOOR</b>' ],
           typespeed: 0
         });
-    },6000);
+    },4000);
   });
 </script>
 
