@@ -197,6 +197,10 @@ position: sticky;
 transition: opacity 3s;
 }
 
+.img-fixed-mobile{
+  opacity: 1;
+}
+
 
 .nav_bar{
   border: 0;
