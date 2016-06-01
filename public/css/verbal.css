@@ -144,10 +144,10 @@ li{
 }
 
 #line3{
-  width: 22em;
-height: 27px;
+  width: 23em;
+height: 100px;
 /* margin-bottom: -43px; */
-margin-top: -12em;
+margin-top: -16em;
 border-bottom: 1px solid black;
 -webkit-transform: translateY(-30px) translateX(25px) rotate(67deg);
 position: sticky;
