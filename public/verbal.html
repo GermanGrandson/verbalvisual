@@ -96,7 +96,7 @@ $(document).ready(function() {
   $(window).scroll(function () {
       console.log($(window).scrollTop())
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('.img').addClass('img-fixed-mobile')
+        $('.img').css("opacity", "1")
       }
     if ($(window).scrollTop() > 500) {
       $('.nav_bar').addClass('navbar-fixed')
@@ -136,6 +136,7 @@ $(document).ready(function () {
 </script>
 
 <script src="javascript/typed.js"></script>
+
 <script>
   $(function typed(){
     setTimeout(function(){
