@@ -95,6 +95,9 @@ $(document).ready(function() {
 
   $(window).scroll(function () {
       console.log($(window).scrollTop())
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('.img').addClass('img-fixed-mobile')
+      }
     if ($(window).scrollTop() > 500) {
       $('.nav_bar').addClass('navbar-fixed')
     }
@@ -106,9 +109,6 @@ $(document).ready(function() {
     }
     if ($(window).scrollTop() < 20){
       $('.img').removeClass('img-fixed');
-    }
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      $('.img').addClass('img-fixed-mobile')
     }
   });
 });
