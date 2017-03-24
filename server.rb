@@ -1,7 +1,9 @@
 require "sinatra"
+require 'rubygems'
+require 'Haml'
 
 get "/" do
-  filer = File.join('public','verbal.html')
-  File.read(filer)
-
+  haml :verbal
+  # filer = File.join('public','verbal.html')
+  # File.read(filer)
 end

@@ -1,0 +1,94 @@
+!!!
+%html
+  %head
+    %title My Sinatra Website
+    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    %link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+    %link(rel="stylesheet" href="css/verbal.css")
+    %link(href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css')
+
+  %body
+    .section-top
+      .intro
+        .intro-text
+          .title from
+          .title.bold factory
+        .intro-text
+          .title to
+          .title.bold store
+        .intro-text
+          .title to
+          .title.bold out the door.
+
+        .titles
+          .title-header ABC Creations offers
+          .title-header.bold international end-to-end apparel
+          .title-header manufacturing solutions for forward-thinking clothing brands.
+        .buttons
+          %button.button.left our process
+          %button.button.right our products
+      .arrow &#8595;
+
+    %nav.navbar.navbar-default
+      .nav-text abc creations
+      .hamburger
+        .line
+        .line
+        .line
+
+    .section-bottom
+      .second-section-title Second Section Header
+      .image
+      .lines#one
+      .lines#two
+      .footer
+        .footer-title footer title
+        .footer-links
+          .footer-link Footer link 1
+          .footer-link Footer link 2
+          .footer-link Footer link 3
+          .footer-link Footer link 4
+
+:javascript
+
+  $(function(){
+    $(".arrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".navbar").offset().top
+    }, 800);
+    });
+  })
+
+  $(function() {
+    if( /iPad/i.test(navigator.userAgent) ) {
+      $(window).scroll(function(){
+        if($(window).scrollTop() > 1310){
+          $('nav').addClass('navbar-fixed-top');
+          $('.second-section-title').addClass('fixed');
+        } else if($(window).scrollTop() < 1310) {
+          $('nav').removeClass('navbar-fixed-top');
+          $('.second-section-title').removeClass('fixed');
+        }
+      })
+    } else if(/iPhone/i.test(navigator.userAgent) ) {
+        $(window).scroll(function(){
+          if($(window).scrollTop() > 1800){
+            $('nav').addClass('navbar-fixed-top');
+            $('.second-section-title').addClass('fixed')
+          } else if($(window).scrollTop() < 1800) {
+            $('nav').removeClass('navbar-fixed-top');
+            $('.second-section-title').removeClass('fixed');
+          }
+        })
+    } else {
+      $(window).scroll(function(){
+        if($(window).scrollTop() > 700){
+          $('nav').addClass('navbar-fixed-top');
+          $('.second-section-title').addClass('fixed')
+        } else if($(window).scrollTop() < 700) {
+          $('nav').removeClass('navbar-fixed-top');
+          $('.second-section-title').removeClass('fixed');
+        }
+      })
+    }
+  });
