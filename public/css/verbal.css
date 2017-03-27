@@ -173,12 +173,14 @@ nav{
   margin-right: auto;
   left: 0;
   right: 0;
+  display: none;
 }
 
 .lines{
   position: absolute;
   z-index: 1;
   -webkit-transform: translateY(-30px) translateX(25px) rotate(67deg);
+  display: none;
 }
 
 #one{

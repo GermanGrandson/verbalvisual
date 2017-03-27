@@ -59,6 +59,18 @@
     });
   })
 
+  $(function(){
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 450){
+        $('.lines').fadeIn(3000);
+        $('.image').fadeIn(2000);
+      } else {
+        $('.lines').fadeOut(2000);
+        $('.image').fadeOut(2000);
+      }
+    })
+  })
+
   $(function() {
     if( /iPad/i.test(navigator.userAgent) ) {
       $(window).scroll(function(){
