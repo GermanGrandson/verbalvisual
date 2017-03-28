@@ -586,6 +586,10 @@ nav{
     margin: 5px;
   }
 
+  .section-bottom{
+    height: 1600px;
+  }
+
   .second-section-title{
     font-size: 20px;
     margin-top: 60px;
