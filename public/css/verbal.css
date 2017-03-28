@@ -509,6 +509,7 @@ nav{
     width: 17%;
     line-height: 20px;
     font-size: 16px;
+    text-align: center;
   }
 
 }
@@ -622,6 +623,7 @@ nav{
   .footer-links{
     width: 18%;
     font-size: 12px;
+    cursor: pointer;
   }
 
 }
