@@ -1,6 +1,6 @@
 require "sinatra"
 require 'rubygems'
-require 'Haml'
+require 'haml'
 
 get "/" do
   haml :verbal
